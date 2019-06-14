@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>vueDemo</title>
+    <link rel="stylesheet" type="text/css" href="http://unpkg.com/iview/dist/styles/iview.css">
+    <script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
+    <script type="text/javascript" src="http://unpkg.com/iview/dist/iview.min.js"></script>
+
+
+</head>
+<body>
+
+<div id="app">
+    <Anchor show-ink>
+        <Anchor-Link href="#basic_usage" title="Basic Usage" ></Anchor-Link>
+        <Anchor-Link href="#static_position" title="Static Position" ></Anchor-Link>
+        <Anchor-Link href="#API" title="API">
+            <Anchor-Link href="#Anchor_props" title="Anchor props" ></Anchor-Link>
+            <Anchor-Link href="#Anchor_events" title="Anchor events" ></Anchor-Link>
+            <Anchor-Link href="#AnchorLink_props" title="AnchorLink props" ></Anchor-Link>
+        </Anchor-Link>
+    </Anchor>
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+  window.onload = function () {
+    new Vue({
+      el: '#app'
+    });
+  };
+</script>
+<style>
+    #app{
+        margin:30px;
+    }
+</style>
