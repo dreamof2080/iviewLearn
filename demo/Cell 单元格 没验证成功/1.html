@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>vueDemo</title>
+    <link rel="stylesheet" type="text/css" href="http://unpkg.com/iview/dist/styles/iview.css">
+    <script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
+    <script type="text/javascript" src="http://unpkg.com/iview/dist/iview.min.js"></script>
+
+
+
+</head>
+<body>
+<div id="app">
+    <div style="padding: 10px;background: #f8f8f9">
+        <Card title="Options" icon="ios-options" :padding="0" shadow style="width: 300px;">
+            <i-cell-group>
+                <Cell title="Only show titles"></Cell>
+                <Cell title="Display label content"></Cell>
+            </i-cell-group>
+        </Card>
+    </div>
+</div>
+
+
+</body>
+<script type="text/javascript">
+  window.onload = function () {
+    new Vue({
+      el: '#app',
+      data: {
+        switchValue: true
+      }
+    });
+  };
+</script>
+
+
+
+

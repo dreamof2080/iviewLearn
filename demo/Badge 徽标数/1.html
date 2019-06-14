@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>vueDemo</title>
+    <link rel="stylesheet" type="text/css" href="http://unpkg.com/iview/dist/styles/iview.css">
+    <script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
+    <script type="text/javascript" src="http://unpkg.com/iview/dist/iview.min.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <Badge :count="5" type="primary">
+        <div href="#" class="demo1-badge"></div>
+    </Badge>
+    <Badge :count="5" type="success">
+        <div href="#" class="demo1-badge"></div>
+    </Badge>
+    <Badge :count="5" type="normal">
+        <div href="#" class="demo1-badge"></div>
+    </Badge>
+    <Badge :count="5" type="info">
+        <div href="#" class="demo1-badge"></div>
+    </Badge>
+    <Badge :count="5" type="error">
+        <div href="#" class="demo1-badge"></div>
+    </Badge>
+    <Badge :count="5" type="warning">
+        <div href="#" class="demo1-badge"></div>
+    </Badge>
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+  window.onload = function () {
+    new Vue({
+      el: '#app'
+    });
+  };
+</script>
+<style>
+    #app{
+        margin:30px;
+    }
+    .demo1-badge{
+        width: 35px;
+        height: 35px;
+        background-color: #4d5669;
+
+    }
+</style>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>vueDemo</title>
+    <link rel="stylesheet" type="text/css" href="http://unpkg.com/iview/dist/styles/iview.css">
+    <script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
+    <script type="text/javascript" src="http://unpkg.com/iview/dist/iview.min.js"></script>
+
+
+</head>
+<body>
+
+<div id="app">
+    <div>
+        <i-Button type="default" ghost>Default</i-Button>
+        <i-Button type="primary" ghost>Primary</i-Button>
+        <i-Button type="dashed" ghost>Dashed</i-Button>
+        <i-Button type="text" ghost>Text</i-Button>
+        <i-Button type="info" ghost>Info</i-Button>
+        <i-Button type="success" ghost>Success</i-Button>
+        <i-Button type="warning" ghost>Warning</i-Button>
+        <i-Button type="error" ghost>Error</i-Button>
+    </div>
+</div>
+</body>
+<style>
+    body{
+        background-color: #5d6470;
+    }
+    #app{
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+</style>
+<script type="text/javascript">
+  window.onload = function () {
+    new Vue({
+      el: '#app'
+    });
+  };
+</script>
+

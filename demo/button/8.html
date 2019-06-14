@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>vueDemo</title>
+    <link rel="stylesheet" type="text/css" href="http://unpkg.com/iview/dist/styles/iview.css">
+    <script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
+    <script type="text/javascript" src="http://unpkg.com/iview/dist/iview.min.js"></script>
+
+
+</head>
+<body>
+
+<div id="app">
+    <h4>Basic</h4>
+    <br><br>
+    <Button-Group>
+        <i-Button>Cancel</i-Button>
+        <i-Button type="primary">Confirm</i-Button>
+    </Button-Group>
+    <Button-Group>
+        <i-Button disabled>Yesterday</i-Button>
+        <i-Button disabled>Today</i-Button>
+        <i-Button disabled>Tomorrow</i-Button>
+    </Button-Group>
+    <Button-Group>
+        <i-Button type="primary">L</i-Button>
+        <i-Button>M</i-Button>
+        <i-Button>M</i-Button>
+        <i-Button type="dashed">R</i-Button>
+    </Button-Group>
+    <br><br>
+    <h4>Icons</h4>
+    <br><br>
+    <Button-Group>
+        <i-Button type="primary">
+            <Icon type="ios-arrow-back"></Icon>
+            Backward
+        </i-Button>
+        <i-Button type="primary">
+            Forward
+            <Icon type="ios-arrow-forward"></Icon>
+        </i-Button>
+    </Button-Group>
+    <Button-Group>
+        <i-Button type="primary" icon="ios-skip-backward"></i-Button>
+        <i-Button type="primary" icon="ios-skip-forward"></i-Button>
+    </Button-Group>
+    <Button-Group>
+        <i-Button icon="ios-color-wand-outline"></i-Button>
+        <i-Button icon="ios-sunny-outline"></i-Button>
+        <i-Button icon="ios-crop"></i-Button>
+        <i-Button icon="ios-color-filter-outline"></i-Button>
+    </Button-Group>
+    <br><br>
+    <h4>Circle</h4>
+    <br><br>
+    <Button-Group shape="circle">
+        <i-Button type="primary">
+            <Icon type="ios-arrow-back"></Icon>
+            Backward
+        </i-Button>
+        <i-Button type="primary">
+            Forward
+            <Icon type="ios-arrow-forward"></Icon>
+        </i-Button>
+    </Button-Group>
+    <Button-Group shape="circle">
+        <i-Button type="primary" icon="ios-skip-backward"></i-Button>
+        <i-Button type="primary" icon="ios-skip-forward"></i-Button>
+    </Button-Group>
+    <Button-Group shape="circle">
+        <i-Button icon="ios-color-wand-outline"></i-Button>
+        <i-Button icon="ios-sunny-outline"></i-Button>
+        <i-Button icon="ios-crop"></i-Button>
+        <i-Button icon="ios-color-filter-outline"></i-Button>
+    </Button-Group>
+    <br><br>
+    <h4>Size</h4>
+    <br><br>
+    <Button-Group size="large">
+        <i-Button>Large</i-Button>
+        <i-Button>Large</i-Button>
+    </Button-Group>
+    <Button-Group>
+        <i-Button>Default</i-Button>
+        <i-Button>Default</i-Button>
+    </Button-Group>
+    <Button-Group size="small">
+        <i-Button>Small</i-Button>
+        <i-Button>Small</i-Button>
+    </Button-Group>
+    <br><br>
+    <Button-Group size="large" shape="circle">
+        <i-Button>Large</i-Button>
+        <i-Button>Large</i-Button>
+    </Button-Group>
+    <Button-Group shape="circle">
+        <i-Button>Default</i-Button>
+        <i-Button>Default</i-Button>
+    </Button-Group>
+    <Button-Group size="small" shape="circle">
+        <i-Button>Small</i-Button>
+        <i-Button>Small</i-Button>
+    </Button-Group>
+</div>
+</body>
+<style>
+    #app{
+        margin:50px;
+    }
+</style>
+<script type="text/javascript">
+  window.onload = function () {
+    new Vue({
+      el: '#app',
+      data: {
+        loading: false,
+        loading2: false
+      }
+    });
+  };
+</script>
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>vueDemo</title>
+    <link rel="stylesheet" type="text/css" href="http://unpkg.com/iview/dist/styles/iview.css">
+    <script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
+    <script type="text/javascript" src="http://unpkg.com/iview/dist/iview.min.js"></script>
+
+
+</head>
+<body>
+
+<div id="app">
+    <div>
+        <i-Button type="primary" shape="circle" icon="ios-search"></i-Button>
+        <i-Button type="primary" icon="ios-search">Search</i-Button>
+        <i-Button type="primary" shape="circle" icon="ios-search">Search</i-Button>
+        <i-Button type="primary" shape="circle">Circle</i-Button>
+        <br><br>
+        <i-Button shape="circle" icon="ios-search"></i-Button>
+        <i-Button icon="ios-search">Search</i-Button>
+        <i-Button shape="circle" icon="ios-search">Search</i-Button>
+        <i-Button shape="circle">Circle</i-Button>
+    </div>
+</div>
+</body>
+<style>
+    #app{
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+</style>
+<script type="text/javascript">
+  window.onload = function () {
+    new Vue({
+      el: '#app'
+    });
+  };
+</script>
+

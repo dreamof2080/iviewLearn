@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>vueDemo</title>
+    <link rel="stylesheet" type="text/css" href="http://unpkg.com/iview/dist/styles/iview.css">
+    <script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
+    <script type="text/javascript" src="http://unpkg.com/iview/dist/iview.min.js"></script>
+
+
+</head>
+<body>
+
+<div id="app">
+    <div>
+        <Radio-Group v-model="buttonSize" type="button">
+            <Radio label="large">Large</Radio>
+            <Radio label="default">Default</Radio>
+            <Radio label="small">small</Radio>
+        </Radio-Group>
+        <br><br>
+        <i-Button :size="buttonSize" type="primary">Primary</i-Button>
+        <i-Button :size="buttonSize" type="default">Default</i-Button>
+        <i-Button :size="buttonSize" type="dashed">Dashed</i-Button>
+        <i-Button :size="buttonSize" type="text">Text</i-Button>
+        <br><br>
+        <i-Button :size="buttonSize" icon="ios-download-outline" type="primary" shape="circle"></i-Button>
+        <i-Button :size="buttonSize" icon="ios-download-outline" type="primary">Download</i-Button>
+        <br><br>
+        <Button-Group :size="buttonSize">
+            <i-Button :size="buttonSize" type="primary">
+                <Icon type="ios-arrow-back"></Icon>
+                Backward
+            </i-Button>
+            <i-Button :size="buttonSize" type="primary">
+                Forward
+                <Icon type="ios-arrow-forward"></Icon>
+            </i-Button>
+        </Button-Group>
+    </div>
+</div>
+</body>
+<style>
+    #app{
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+</style>
+<script type="text/javascript">
+  window.onload = function () {
+    new Vue({
+      el: '#app',
+      data: {
+        buttonSize: 'large'
+      }
+    });
+  };
+</script>
+

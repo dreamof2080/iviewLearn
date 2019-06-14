@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>vueDemo</title>
+    <link rel="stylesheet" type="text/css" href="http://unpkg.com/iview/dist/styles/iview.css">
+    <script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
+    <script type="text/javascript" src="http://unpkg.com/iview/dist/iview.min.js"></script>
+
+
+
+</head>
+<body>
+
+<div id="app">
+    <Dropdown>
+        <a href="javascript:void(0)">
+            下拉菜单
+            <Icon type="ios-arrow-down"></Icon>
+        </a>
+        <Dropdown-Menu slot="list">
+            <Dropdown-Item>驴打滚</Dropdown-Item>
+            <Dropdown-Item>炸酱面</Dropdown-Item>
+            <Dropdown-Item disabled>豆汁儿</Dropdown-Item>
+            <Dropdown-Item>冰糖葫芦</Dropdown-Item>
+            <Dropdown-Item divided>北京烤鸭</Dropdown-Item>
+        </Dropdown-Menu>
+    </Dropdown>
+    <Dropdown style="margin-left: 20px">
+        <i-Button type="primary">
+            下拉菜单
+            <Icon type="ios-arrow-down"></Icon>
+        </i-Button>
+        <Dropdown-Menu slot="list">
+            <Dropdown-Item>驴打滚</Dropdown-Item>
+            <Dropdown-Item>炸酱面</Dropdown-Item>
+            <Dropdown-Item disabled>豆汁儿</Dropdown-Item>
+            <Dropdown-Item>冰糖葫芦</Dropdown-Item>
+            <Dropdown-Item divided>北京烤鸭</Dropdown-Item>
+        </Dropdown-Menu>
+    </Dropdown>
+    <Dropdown>
+        <a href="javascript:void(0)">
+            北京小吃
+            <Icon type="ios-arrow-down"></Icon>
+        </a>
+        <Dropdown-Menu slot="list">
+            <Dropdown-Item>驴打滚</Dropdown-Item>
+            <Dropdown-Item>炸酱面</Dropdown-Item>
+            <Dropdown-Item>豆汁儿</Dropdown-Item>
+            <Dropdown placement="right-start">
+                <Dropdown-Item>
+                    北京烤鸭
+                    <Icon type="ios-arrow-forward"></Icon>
+                </Dropdown-Item>
+                <Dropdown-Menu slot="list">
+                    <Dropdown-Item>挂炉烤鸭</Dropdown-Item>
+                    <Dropdown-Item>焖炉烤鸭</Dropdown-Item>
+                </Dropdown-Menu>
+            </Dropdown>
+            <Dropdown-Item>冰糖葫芦</Dropdown-Item>
+        </Dropdown-Menu>
+    </Dropdown>
+</div>
+
+</body>
+
+<script type="text/javascript">
+  window.onload = function () {
+    new Vue({
+      el: '#app'
+    });
+  };
+</script>

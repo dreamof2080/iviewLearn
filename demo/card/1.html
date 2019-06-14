@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>vueDemo</title>
+    <link rel="stylesheet" type="text/css" href="http://unpkg.com/iview/dist/styles/iview.css">
+    <script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
+    <script type="text/javascript" src="http://unpkg.com/iview/dist/iview.min.js"></script>
+
+
+
+</head>
+<body>
+<div id="app">
+    <div style="background:#eee;padding: 20px">
+        <Card :bordered="false">
+            <p slot="title">No border title</p>
+            <p>Content of no border type. Content of no border type. Content of no border type. Content of no border type. </p>
+        </Card>
+    </div>
+    <div>
+        <Card>
+            <p slot="title">The standard card</p>
+            <p>Content of card</p>
+            <p>Content of card</p>
+            <p>Content of card</p>
+        </Card>
+    </div>
+</div>
+
+
+</body>
+<script type="text/javascript">
+  window.onload = function () {
+    new Vue({
+      el: '#app'
+    });
+  };
+</script>
+
+
+

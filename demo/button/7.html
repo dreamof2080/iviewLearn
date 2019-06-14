@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>vueDemo</title>
+    <link rel="stylesheet" type="text/css" href="http://unpkg.com/iview/dist/styles/iview.css">
+    <script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
+    <script type="text/javascript" src="http://unpkg.com/iview/dist/iview.min.js"></script>
+
+
+</head>
+<body>
+
+<div id="app">
+    <i-Button type="primary" loading>Loading...</i-Button>
+    <i-Button type="primary" :loading="loading" @click="toLoading">
+        <span v-if="!loading">Click me!</span>
+        <span v-else>Loading...</span>
+    </i-Button>
+    <i-Button type="primary" :loading="loading2" icon="ios-power" @click="toLoading2">
+        <span v-if="!loading2">Click me!</span>
+        <span v-else>Loading...</span>
+    </i-Button>
+    <i-Button loading shape="circle"></i-Button>
+    <i-Button loading shape="circle" type="primary"></i-Button>
+</div>
+</body>
+<style>
+    #app{
+        margin:50px;
+    }
+</style>
+<script type="text/javascript">
+  window.onload = function () {
+    new Vue({
+      el: '#app',
+      data: {
+        loading: false,
+        loading2: false
+      },
+      methods: {
+        toLoading () {
+          this.loading = true;
+        },
+        toLoading2 () {
+          this.loading2 = true;
+        }
+      }
+    });
+  };
+</script>
+
