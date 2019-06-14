@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>vueDemo</title>
+    <link rel="stylesheet" type="text/css" href="http://unpkg.com/iview/dist/styles/iview.css">
+    <script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
+    <script type="text/javascript" src="http://unpkg.com/iview/dist/iview.min.js"></script>
+
+
+
+</head>
+<body>
+
+<div id="app">
+    <Radio-Group v-model="button6" type="button" size="small">
+        <Radio label="北京"></Radio>
+        <Radio label="上海"></Radio>
+        <Radio label="深圳"></Radio>
+        <Radio label="杭州"></Radio>
+    </Radio-Group>
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+  window.onload = function () {
+    new Vue({
+      el: '#app',
+      data: {
+        button6: '北京'
+      }
+    });
+  };
+</script>

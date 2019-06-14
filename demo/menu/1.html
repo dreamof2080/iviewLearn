@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>vueDemo</title>
+    <link rel="stylesheet" type="text/css" href="http://unpkg.com/iview/dist/styles/iview.css">
+    <script type="text/javascript" src="http://vuejs.org/js/vue.min.js"></script>
+    <script type="text/javascript" src="http://unpkg.com/iview/dist/iview.min.js"></script>
+
+
+
+</head>
+<body>
+<div id="app">
+    <i-Menu mode="horizontal" :theme="theme1" active-name="1">
+        <Menu-Item name="1">
+            <icon type="ios-paper"></icon>
+            内容管理
+        </Menu-Item>
+        <Menu-Item name="2">
+            <Icon type="ios-people"></Icon>
+            用户管理
+        </Menu-Item>
+        <Submenu name="3">
+            <template slot="title">
+                <Icon type="ios-stats"></Icon>
+                统计分析
+            </template>
+            <Menu-Group title="使用">
+                <Menu-Item name="3-1">新增和启动</Menu-Item>
+                <Menu-Item name="3-2">活跃分析</Menu-Item>
+                <Menu-Item name="3-3">时段分析</Menu-Item>
+            </Menu-Group>
+            <Menu-Group title="留存">
+                <Menu-Item name="3-4">用户留存</Menu-Item>
+                <Menu-Item name="3-5">流失用户</Menu-Item>
+            </Menu-Group>
+        </Submenu>
+        <Menu-Item name="4">
+            <Icon type="ios-construct"></Icon>
+            综合设置
+        </Menu-Item>
+    </i-Menu>
+    <br>
+    <p>Change theme</p>
+    <Radio-Group v-model="theme1">
+        <Radio label="light"></Radio>
+        <Radio label="dark"></Radio>
+        <Radio label="primary"></Radio>
+    </Radio-Group>
+</div>
+
+
+</body>
+<script type="text/javascript">
+  window.onload = function () {
+    new Vue({
+      el: '#app',
+      data: {
+        theme1: 'light'
+      }
+    });
+  };
+</script>
+
+
+
+
